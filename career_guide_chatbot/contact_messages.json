@@ -1,0 +1,28 @@
+[
+  {
+    "name": "sheela",
+    "question": "how to become a doctor? what should i need to study after 12th?",
+    "reply": "you need to prepare for NEET entrance exam.",
+    "status": "answered"
+  },
+  {
+    "name": "asmi",
+    "question": "tell me the top courses",
+    "timestamp": "2025-07-06 10:37:26",
+    "reply": "In engineering, AI, data science, cybersecurity, robotics, web development, digital marketing,robotics, android development etc..,",
+    "status": "answered"
+  },
+  {
+    "name": "Riya",
+    "question": "what are the languages to learn coding",
+    "reply": "C,C++,PYTHON,JAVA , javascript.,",
+    "status": "answered"
+  },
+  {
+    "name": "HAYDEN JOSEPH",
+    "email": "haydenjoseph1008@gmail.com",
+    "question": "hiiee varshitha.. how are you.. are u prepared for tnpsc exam?",
+    "reply": "Hi Hayden! I am fine. what about you? ",
+    "status": "answered"
+  }
+]

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Career Guide</title>
+  <link rel="manifest" href="{{ url_for('static', filename='manifest.json') }}">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #eaf4ff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .title-box {
+      background-color: #d9efff;
+      border: 3px solid #004aad;
+      border-radius: 20px;
+      display: inline-block;
+      padding: 10px 25px;
+      margin-bottom: 10px;
+      box-shadow: 0 0 25px #0056b3;
+    }
+
+    .title-box h1 {
+      font-size: 2.5rem;
+      font-style: italic;
+      color: #003366;
+      margin: 0;
+    }
+
+    .tagline {
+      font-style: italic;
+      color: #003c7a;
+      font-weight: 700;
+      margin-top: 10px;
+      margin-bottom: 25px;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      color: #222;
+    }
+
+    .grid-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      padding: 10px;
+    }
+
+    .grid-card {
+      background-color: #0d6efd;
+      color: white;
+      width: 130px;
+      height: 130px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      border-radius: 15px;
+      font-size: 16px;
+      transition: 0.3s;
+    }
+
+    .grid-card:hover {
+      background-color: #084298;
+      transform: scale(1.05);
+    }
+
+    .icon {
+      font-size: 32px;
+      margin-bottom: 8px;
+    }
+
+    .collapsible {
+      background-color: #007bff;
+      color: white;
+      cursor: pointer;
+      padding: 15px;
+      width: 60%;
+      margin: 10px auto;
+      border: none;
+      text-align: center;
+      font-size: 18px;
+      border-radius: 10px;
+    }
+
+    .collapsible:hover {
+      background-color: #0056b3;
+    }
+
+    .content {
+      display: none;
+      margin-top: 10px;
+    }
+
+    .footer {
+      margin-top: 40px;
+      font-size: 14px;
+      color: #555;
+    }
+    .footer-buttons {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.footer-btn {
+  display: inline-block;
+  background-color: #007bff;
+  color: #ffffff;
+  padding: 10px 18px;
+  margin: 6px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.footer-btn:hover {
+  background-color: #002f6c;
+}
+
+  </style>
+</head>
+<body>
+
+  <div class="title-box">
+    <h1>🧭 Career Compass</h1>
+  </div>
+  <div class="tagline">Your Path to Bright Future</div>
+
+  <h2>Explore your future after 10th & 12th – Learn about careers, courses, and government jobs</h2>
+
+  <div class="grid-container">
+    <a href="/after10th" class="grid-card">
+      <div class="icon">🎓</div>
+      <div>After 10th</div>
+    </a>
+    <a href="/after12th" class="grid-card">
+      <div class="icon">🎓</div>
+      <div>After 12th</div>
+    </a>
+    <a href="/exams" class="grid-card">
+      <div class="icon">🎯</div>
+      <div>Exams & Jobs</div>
+    </a>
+     <a href="/engineering" class="grid-card">
+  <div class="icon">⚙️</div>
+  <div>Engineering Guide</div>
+</a>
+    <a href="/scholarships" class="grid-card">
+      <div class="icon">🎁</div>
+      <div>Scholarships</div>
+    </a>
+    <a href="/faq" class="grid-card">
+      <div class="icon">❓</div>
+      <div>FAQs</div>
+    </a>
+   
+
+  </div>
+
+  <!-- Profession Paths Section -->
+  <button class="collapsible" id="professions-button">🧩 Profession Paths</button>
+  <div class="content" id="professions-section">
+    <div class="grid-container">
+      <a href="/doctor" class="grid-card">
+        <div class="icon">👨‍⚕️</div>
+        <div>Doctor</div>
+      </a>
+      <a href="/police" class="grid-card">
+        <div class="icon">👮</div>
+        <div>Police</div>
+      </a>
+      <a href="/teacher" class="grid-card">
+        <div class="icon">👩‍🏫</div>
+        <div>Teacher</div>
+      </a>
+      <a href="/software" class="grid-card">
+        <div class="icon">💻</div>
+        <div>Software</div>
+      </a>
+      <a href="/govtjobs" class="grid-card">
+        <div class="icon">🏛️</div>
+        <div>Govt Jobs</div>
+      </a>
+    </div>
+  </div>
+
+  
+  <div class="footer-buttons">
+    
+    <a href="/admin/login" class="footer-btn">🔑 Admin Login</a>
+    <div class="footer">
+  &copy; 2025 Career Guide || Made for Students
+  </div>
+</div>
+
+
+
+  <script>
+    const collapsibleBtn = document.getElementById("professions-button");
+    const contentDiv = document.getElementById("professions-section");
+
+    collapsibleBtn.addEventListener("click", function () {
+      this.classList.toggle("active");
+      contentDiv.style.display = contentDiv.style.display === "block" ? "none" : "block";
+    });
+
+    // Auto-open profession section if returning with hash
+    window.onload = function () {
+      if (window.location.hash === "#professions") {
+        contentDiv.style.display = "block";
+      }
+    };
+  </script>
+  <!-- <script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/static/service-worker.js')
+      .then(function(registration) {
+        console.log('Service Worker registered with scope:', registration.scope);
+      })
+      .catch(function(error) {
+        console.log('Service Worker registration failed:', error);
+      });
+  }
+</script> -->
+
+
+</body>
+</html>

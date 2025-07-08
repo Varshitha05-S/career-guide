@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Admin Login</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #eaf4ff;
+      margin: 0;
+      padding: 40px 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    h1 {
+      background-color: #d9efff;
+      border: 3px solid #004aad;
+      border-radius: 25px;
+      padding: 10px 20px;
+      box-shadow: 0 0 25px #0056b3;
+      color: #003366;
+      font-style: italic;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .login-box {
+      background-color: #ffffff;
+      border: 3px solid #004aad;
+      border-radius: 25px;
+      padding: 30px;
+      width: 100%;
+      max-width: 400px;
+      box-shadow: 0 0 25px #0056b3;
+      text-align: center;
+    }
+
+    input[type="password"] {
+      width: 100%;
+      padding: 12px;
+      margin-top: 15px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1em;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 16px;
+      color: white;
+      background-color: #004aad;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #003070;
+    }
+
+    .back-home {
+      display: inline-block;
+      margin-top: 170px;
+      padding: 10px 20px;
+      font-size: 16px;
+      color: white;
+      text-decoration: none;
+      background-color: #004aad;
+      border-radius: 8px;
+      transition: background-color 0.3s;
+    }
+
+    .back-home:hover {
+      background-color: #003070;
+    }
+
+    .error-msg {
+      color: #cc0000;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🔒 Admin Login</h1>
+
+  <div class="login-box">
+    <form method="POST" autocomplete="off">
+      <input type="password" name="password" autocomplete="new-password" placeholder="Enter Password" required>
+      <button type="submit">Login</button>
+    </form>
+    {% if error %}
+      <div class="error-msg">{{ error }}</div>
+    {% endif %}
+  </div>
+
+  <a href="/" class="back-home">🏠 Back to Home</a>
+
+</body>
+</html>
