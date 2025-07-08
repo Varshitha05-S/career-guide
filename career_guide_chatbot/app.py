@@ -101,7 +101,7 @@ def engineering(): return render_template("engineering.html")
 def admin_login():
     if request.method == "POST":
         password = request.form.get("password")
-        if password == "paapa":
+        if password == "Varshi@05":
             session["logged_in"] = True
             return redirect(url_for("admin_messages"))
         else:
