@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html lang="ta">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Exams, Courses & Government Jobs Guide</title>
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       font-family: Arial, sans-serif;
       padding: 20px;
@@ -31,15 +35,21 @@
       margin-top: 30px;
     }
 
-    table {
+    .table-wrapper {
+      overflow-x: auto;
       margin: 20px auto;
-      border-collapse: collapse;
-      width: 95%;
-      background-color: #ffffff;
       border-radius: 15px;
-      overflow: hidden;
-      border: 3px solid #004aad;
       box-shadow: 0 0 25px #0056b3;
+      max-width: 100%;
+      border: 3px solid #004aad;
+      background-color: #ffffff;
+    }
+
+    table {
+      width: 100%;
+      min-width: 800px;
+      border-collapse: collapse;
+      background-color: #ffffff;
     }
 
     th, td {
@@ -47,6 +57,7 @@
       padding: 10px;
       text-align: center;
       font-size: 14px;
+      white-space: nowrap;
     }
 
     th {
@@ -79,85 +90,96 @@
   <h2>In English:</h2>
 
   <h3>✅ Entrance Exam Marks Info</h3>
-  <table>
-    <tr><th>Exam</th><th>Total Marks</th><th>Pass Mark</th><th>Good Score</th><th>Free Seat Eligibility</th><th>Career/Job</th></tr>
-    <tr><td>NEET</td><td>720</td><td>138</td><td>500+</td><td>600+</td><td>Doctor, Dentist, AYUSH</td></tr>
-    <tr><td>JEE Main</td><td>300</td><td>75</td><td>150+</td><td>200+</td><td>Engineering</td></tr>
-    <tr><td>JEE Advanced</td><td>360</td><td>70+</td><td>160+</td><td>180+</td><td>IIT Engineering</td></tr>
-    <tr><td>CUET</td><td>800</td><td>100+</td><td>500+</td><td>600+</td><td>UG Programs (BSc, BA, BCom)</td></tr>
-    <tr><td>CLAT</td><td>120</td><td>45+</td><td>80+</td><td>90+</td><td>Lawyer</td></tr>
-    <tr><td>AgniVeer</td><td>100</td><td>30+</td><td>60+</td><td>70+</td><td>Army/Navy</td></tr>
-    <tr><td>CA Foundation</td><td>400</td><td>200</td><td>250+</td><td>300+</td><td>Chartered Accountant</td></tr>
-    <tr><td>NIFT / NID</td><td>100</td><td>40+</td><td>70+</td><td>80+</td><td>Fashion / Design</td></tr>
-    <tr><td>ICAR</td><td>720</td><td>150+</td><td>400+</td><td>500+</td><td>Agriculture / Veterinary</td></tr>
-    <tr><td>GPAT</td><td>500</td><td>120+</td><td>250+</td><td>300+</td><td>Pharmacy</td></tr>
-    <tr><td>NCHM JEE</td><td>200</td><td>50+</td><td>120+</td><td>150+</td><td>Hotel Management</td></tr>
-  </table>
+  <div class="table-wrapper">
+    <table>
+      <tr><th>Exam</th><th>Total Marks</th><th>Pass Mark</th><th>Good Score</th><th>Free Seat Eligibility</th><th>Career/Job</th></tr>
+      <tr><td>NEET</td><td>720</td><td>138</td><td>500+</td><td>600+</td><td>Doctor, Dentist, AYUSH</td></tr>
+      <tr><td>JEE Main</td><td>300</td><td>75</td><td>150+</td><td>200+</td><td>Engineering</td></tr>
+      <tr><td>JEE Advanced</td><td>360</td><td>70+</td><td>160+</td><td>180+</td><td>IIT Engineering</td></tr>
+      <tr><td>CUET</td><td>800</td><td>100+</td><td>500+</td><td>600+</td><td>UG Programs (BSc, BA, BCom)</td></tr>
+      <tr><td>CLAT</td><td>120</td><td>45+</td><td>80+</td><td>90+</td><td>Lawyer</td></tr>
+      <tr><td>AgniVeer</td><td>100</td><td>30+</td><td>60+</td><td>70+</td><td>Army/Navy</td></tr>
+      <tr><td>CA Foundation</td><td>400</td><td>200</td><td>250+</td><td>300+</td><td>Chartered Accountant</td></tr>
+      <tr><td>NIFT / NID</td><td>100</td><td>40+</td><td>70+</td><td>80+</td><td>Fashion / Design</td></tr>
+      <tr><td>ICAR</td><td>720</td><td>150+</td><td>400+</td><td>500+</td><td>Agriculture / Veterinary</td></tr>
+      <tr><td>GPAT</td><td>500</td><td>120+</td><td>250+</td><td>300+</td><td>Pharmacy</td></tr>
+      <tr><td>NCHM JEE</td><td>200</td><td>50+</td><td>120+</td><td>150+</td><td>Hotel Management</td></tr>
+    </table>
+  </div>
 
   <h3>✅ Government Job Exams</h3>
-  <table>
-    <tr><th>Exam</th><th>Qualification</th><th>Age Limit</th><th>Job Roles</th></tr>
-    <tr><td>UPSC(Prelims+Mains+Interview)</td><td>Degree</td><td>21-32</td><td>IAS, IPS, IFS, IRS, etc.</td></tr>
-    <tr><td>TNPSC Group 4</td><td>10th Pass</td><td>18-32</td><td>Clerk, Typist, VAO</td></tr>
-    <tr><td>SSC CHSL</td><td>12th Pass</td><td>18-27</td><td>Data Entry Operator, LDC</td></tr>
-    <tr><td>SSC CGL</td><td>Degree</td><td>18-32</td><td>Income Tax Officer</td></tr>
-    <tr><td>RRB NTPC</td><td>12th / Degree</td><td>18-33</td><td>Railway Clerk, Guard</td></tr>
-    <tr><td>IBPS Clerk/PO</td><td>Degree</td><td>20-30</td><td>Bank Clerk, PO</td></tr>
-    <tr><td>TNUSRB</td><td>10th / 12th</td><td>18-24</td><td>Constable, SI</td></tr>
-  </table>
+  <div class="table-wrapper">
+    <table>
+      <tr><th>Exam</th><th>Qualification</th><th>Age Limit</th><th>Job Roles</th></tr>
+      <tr><td>UPSC</td><td>Degree</td><td>21-32</td><td>IAS, IPS, IFS, IRS</td></tr>
+      <tr><td>TNPSC Group 4</td><td>10th Pass</td><td>18-32</td><td>Clerk, Typist, VAO</td></tr>
+      <tr><td>SSC CHSL</td><td>12th Pass</td><td>18-27</td><td>Data Entry Operator, LDC</td></tr>
+      <tr><td>SSC CGL</td><td>Degree</td><td>18-32</td><td>Income Tax Officer</td></tr>
+      <tr><td>RRB NTPC</td><td>12th / Degree</td><td>18-33</td><td>Railway Clerk, Guard</td></tr>
+      <tr><td>IBPS Clerk/PO</td><td>Degree</td><td>20-30</td><td>Bank Clerk, PO</td></tr>
+      <tr><td>TNUSRB</td><td>10th / 12th</td><td>18-24</td><td>Constable, SI</td></tr>
+    </table>
+  </div>
 
   <h3>✅ Diploma / Skill / Teaching / Paramedical Options</h3>
-  <table>
-    <tr><th>Course/Exam</th><th>Eligibility</th><th>Job Role</th></tr>
-    <tr><td>Diploma in IT / Mech / Civil</td><td>10th / 12th</td><td>Junior Engineer</td></tr>
-    <tr><td>ITI (Electrician, Fitter, Welder)</td><td>10th Pass</td><td>Technician</td></tr>
-    <tr><td>DMLT / Radiology / Nursing Assistant</td><td>12th (Bio)</td><td>Lab Tech / Hospital Staff</td></tr>
-    <tr><td>D.El.Ed / B.Ed</td><td>12th / Degree</td><td>Teacher</td></tr>
-    <tr><td>TNTET / CTET</td><td>D.El.Ed / B.Ed</td><td>Govt Teacher</td></tr>
-  </table>
+  <div class="table-wrapper">
+    <table>
+      <tr><th>Course/Exam</th><th>Eligibility</th><th>Job Role</th></tr>
+      <tr><td>Diploma in IT / Mech / Civil</td><td>10th / 12th</td><td>Junior Engineer</td></tr>
+      <tr><td>ITI</td><td>10th Pass</td><td>Technician</td></tr>
+      <tr><td>DMLT / Radiology / Nursing Assistant</td><td>12th (Bio)</td><td>Lab Tech / Hospital Staff</td></tr>
+      <tr><td>D.El.Ed / B.Ed</td><td>12th / Degree</td><td>Teacher</td></tr>
+      <tr><td>TNTET / CTET</td><td>D.El.Ed / B.Ed</td><td>Govt Teacher</td></tr>
+    </table>
+  </div>
 
   <!-- Tamil Section -->
   <h2>தமிழில்:</h2>
 
   <h3>✅ நுழைவுத் தேர்வு மதிப்பெண் விவரங்கள்</h3>
-  <table>
-    <tr><th>தேர்வு</th><th>மொத்த மதிப்பெண்</th><th>தேர்ச்சி</th><th>நல்ல மதிப்பெண்</th><th>இலவச இடம்</th><th>பணி</th></tr>
-    <tr><td>NEET</td><td>720</td><td>138</td><td>500+</td><td>600+</td><td>மருத்துவர்</td></tr>
-    <tr><td>JEE Main</td><td>300</td><td>75</td><td>150+</td><td>200+</td><td>பொறியியல்</td></tr>
-    <tr><td>JEE Advanced</td><td>360</td><td>70+</td><td>160+</td><td>180+</td><td>IIT பொறியியல்</td></tr>
-    <tr><td>CUET</td><td>800</td><td>100+</td><td>500+</td><td>600+</td><td>BA, BSc, BCom</td></tr>
-    <tr><td>CLAT</td><td>120</td><td>45+</td><td>80+</td><td>90+</td><td>வக்கீல்</td></tr>
-    <tr><td>AgniVeer</td><td>100</td><td>30+</td><td>60+</td><td>70+</td><td>ராணுவம்</td></tr>
-    <tr><td>CA Foundation</td><td>400</td><td>200</td><td>250+</td><td>300+</td><td>சிஏ</td></tr>
-    <tr><td>NIFT / NID</td><td>100</td><td>40+</td><td>70+</td><td>80+</td><td>வடிவமைப்பு</td></tr>
-    <tr><td>ICAR</td><td>720</td><td>150+</td><td>400+</td><td>500+</td><td>வேளாண்மை</td></tr>
-    <tr><td>GPAT</td><td>500</td><td>120+</td><td>250+</td><td>300+</td><td>மருந்தியல்</td></tr>
-    <tr><td>NCHM JEE</td><td>200</td><td>50+</td><td>120+</td><td>150+</td><td>ஹோட்டல் நிர்வாகம்</td></tr>
-  </table>
+  <div class="table-wrapper">
+    <table>
+      <tr><th>தேர்வு</th><th>மொத்த மதிப்பெண்</th><th>தேர்ச்சி</th><th>நல்ல மதிப்பெண்</th><th>இலவச இடம்</th><th>பணி</th></tr>
+      <tr><td>NEET</td><td>720</td><td>138</td><td>500+</td><td>600+</td><td>மருத்துவர்</td></tr>
+      <tr><td>JEE Main</td><td>300</td><td>75</td><td>150+</td><td>200+</td><td>பொறியியல்</td></tr>
+      <tr><td>JEE Advanced</td><td>360</td><td>70+</td><td>160+</td><td>180+</td><td>IIT பொறியியல்</td></tr>
+      <tr><td>CUET</td><td>800</td><td>100+</td><td>500+</td><td>600+</td><td>BA, BSc, BCom</td></tr>
+      <tr><td>CLAT</td><td>120</td><td>45+</td><td>80+</td><td>90+</td><td>வக்கீல்</td></tr>
+      <tr><td>AgniVeer</td><td>100</td><td>30+</td><td>60+</td><td>70+</td><td>ராணுவம்</td></tr>
+      <tr><td>CA Foundation</td><td>400</td><td>200</td><td>250+</td><td>300+</td><td>சிஏ</td></tr>
+      <tr><td>NIFT / NID</td><td>100</td><td>40+</td><td>70+</td><td>80+</td><td>வடிவமைப்பு</td></tr>
+      <tr><td>ICAR</td><td>720</td><td>150+</td><td>400+</td><td>500+</td><td>வேளாண்மை</td></tr>
+      <tr><td>GPAT</td><td>500</td><td>120+</td><td>250+</td><td>300+</td><td>மருந்தியல்</td></tr>
+      <tr><td>NCHM JEE</td><td>200</td><td>50+</td><td>120+</td><td>150+</td><td>ஹோட்டல் நிர்வாகம்</td></tr>
+    </table>
+  </div>
 
   <h3>✅ அரசு வேலை தேர்வுகள்</h3>
-  <table>
-    <tr><th>தேர்வு</th><th>தகுதி</th><th>வயது</th><th>வேலை</th></tr>
-    <tr><td>UPSC</td><td>பட்டம்</td><td>21-32</td><td>IAS, IPS, IFS, IRS..,</td></tr>
-    <tr><td>TNPSC Group 4</td><td>10வது</td><td>18-32</td><td>விலாக் உதவியாளர்</td></tr>
-    <tr><td>SSC CHSL</td><td>12வது</td><td>18-27</td><td>டேட்டா என்ட்ரி</td></tr>
-    <tr><td>SSC CGL</td><td>பட்டம்</td><td>18-32</td><td>வருமான வரி</td></tr>
-    <tr><td>RRB NTPC</td><td>12 / பட்டம்</td><td>18-33</td><td>ரயில்வே கிளார்க்</td></tr>
-    <tr><td>IBPS</td><td>பட்டம்</td><td>20-30</td><td>வங்கி அதிகாரி</td></tr>
-    <tr><td>TNUSRB</td><td>10 / 12</td><td>18-24</td><td>காவலர்</td></tr>
-  </table>
+  <div class="table-wrapper">
+    <table>
+      <tr><th>தேர்வு</th><th>தகுதி</th><th>வயது</th><th>வேலை</th></tr>
+      <tr><td>UPSC</td><td>பட்டம்</td><td>21-32</td><td>IAS, IPS, IFS, IRS..</td></tr>
+      <tr><td>TNPSC Group 4</td><td>10வது</td><td>18-32</td><td>விலாக் உதவியாளர்</td></tr>
+      <tr><td>SSC CHSL</td><td>12வது</td><td>18-27</td><td>டேட்டா என்ட்ரி</td></tr>
+      <tr><td>SSC CGL</td><td>பட்டம்</td><td>18-32</td><td>வருமான வரி</td></tr>
+      <tr><td>RRB NTPC</td><td>12 / பட்டம்</td><td>18-33</td><td>ரயில்வே கிளார்க்</td></tr>
+      <tr><td>IBPS</td><td>பட்டம்</td><td>20-30</td><td>வங்கி அதிகாரி</td></tr>
+      <tr><td>TNUSRB</td><td>10 / 12</td><td>18-24</td><td>காவலர்</td></tr>
+    </table>
+  </div>
 
   <h3>✅ டிப்ளமா / திறன் பயிற்சி</h3>
-  <table>
-    <tr><th>பாடநெறி</th><th>தகுதி</th><th>வேலை</th></tr>
-    <tr><td>IT / மெக்கானிகல் / சிவில் டிப்ளமா</td><td>10 / 12</td><td>இன்ஜினியர்</td></tr>
-    <tr><td>ITI</td><td>10</td><td>தொழில்நுட்பம்</td></tr>
-    <tr><td>DMLT / ரேடியோ / நர்சிங்</td><td>12 (Bio)</td><td>ஹாஸ்பிடல்</td></tr>
-    <tr><td>D.El.Ed / B.Ed</td><td>12 / பட்டம்</td><td>ஆசிரியர்</td></tr>
-    <tr><td>TNTET / CTET</td><td>B.Ed</td><td>அரசு ஆசிரியர்</td></tr>
-  </table>
+  <div class="table-wrapper">
+    <table>
+      <tr><th>பாடநெறி</th><th>தகுதி</th><th>வேலை</th></tr>
+      <tr><td>IT / மெக்கானிகல் / சிவில் டிப்ளமா</td><td>10 / 12</td><td>இன்ஜினியர்</td></tr>
+      <tr><td>ITI</td><td>10</td><td>தொழில்நுட்பம்</td></tr>
+      <tr><td>DMLT / ரேடியோ / நர்சிங்</td><td>12 (Bio)</td><td>ஹாஸ்பிடல்</td></tr>
+      <tr><td>D.El.Ed / B.Ed</td><td>12 / பட்டம்</td><td>ஆசிரியர்</td></tr>
+      <tr><td>TNTET / CTET</td><td>B.Ed</td><td>அரசு ஆசிரியர்</td></tr>
+    </table>
+  </div>
 
   <a href="/">🏠 Back to Home</a>
-
 </body>
 </html>

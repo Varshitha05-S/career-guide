@@ -12,6 +12,7 @@
       line-height: 1.6;
       color: #222;
     }
+
     .title-box {
       background-color: #d9efff;
       border: 3px solid #004aad;
@@ -21,42 +22,65 @@
       margin-bottom: 15px;
       box-shadow: 0 0 25px #0056b3;
     }
+
     .title-box h1 {
       font-size: 2rem;
       color: #003366;
       margin: 0;
     }
+
+    .center {
+      text-align: center;
+    }
+
     .section {
       background: #fff;
       border-radius: 15px;
       padding: 20px;
       margin: 15px auto;
       max-width: 1000px;
-      box-shadow: 0 0 25px #0056b3;
-      border: 3px solid #004aad;
     }
+
     .section h3 {
       color: #0d6efd;
+      margin-top: 0;
     }
+
+    .table-wrapper {
+      overflow-x: auto;
+      border-radius: 15px;
+      margin: 15px auto;
+      max-width: 1000px;
+      border: 3px solid #004aad;
+      box-shadow: 0 0 25px #0056b3;
+      background-color: #fff;
+      padding: 10px;
+    }
+
     table {
       width: 100%;
+      min-width: 800px;
       border-collapse: collapse;
-      margin-top: 10px;
     }
+
     th, td {
       border: 1px solid #ccc;
       padding: 10px;
       text-align: center;
       font-size: 14px;
+      word-wrap: break-word;
     }
+
     th {
       background-color: #d9efff;
       color: #003366;
     }
+
     ul {
       margin-left: 20px;
       text-align: left;
     }
+
     .back-home {
       display: inline-block;
       margin: 30px auto;
@@ -65,15 +89,22 @@
       color: white;
       text-decoration: none;
       border-radius: 8px;
+      transition: background-color 0.3s;
     }
+
     .back-home:hover {
       background: #001f4d;
     }
-    .center {
-      text-align: center;
-    }
-    a:hover {
-      background-color: #001f4d;
+
+    @media screen and (max-width: 768px) {
+      .title-box h1 {
+        font-size: 1.5rem;
+      }
+
+      th, td {
+        font-size: 12px;
+        padding: 8px;
+      }
     }
   </style>
 </head>
@@ -91,155 +122,49 @@
       An engineering degree is a professional qualification that teaches students to design, develop, and maintain technologies, machines, and systems.
       Most courses are B.E. or B.Tech, 4 years after 12th standard (Physics, Chemistry, Mathematics).
     </p>
+    <p><strong>Engineering offers vast career opportunities in India and abroad.</strong></p>
     <p>
-      <strong>Engineering offers vast career opportunities in India and abroad.</strong>
-    </p>
-    <p>
-      இன்ஜினியரிங் என்பது தொழில்முறை தகுதி. இது யந்திரங்கள், தொழில்நுட்பம் மற்றும் அமைப்புகளை உருவாக்கும் திறனை வழங்கும். பொதுவாக பன்னிரண்டாம் வகுப்பு பிஎச்சி மாணவர்கள் B.E அல்லது B.Tech படிக்கலாம். இது 4 ஆண்டுகள் கொண்ட படிப்பு.
+      இன்ஜினியரிங் என்பது தொழில்முறை தகுதி. இது யந்திரங்கள், தொழில்நுட்பம் மற்றும் அமைப்புகளை உருவாக்கும் திறனை வழங்கும். 
+      பொதுவாக பன்னிரண்டாம் வகுப்பு பிஎச்சி மாணவர்கள் B.E அல்லது B.Tech படிக்கலாம். இது 4 ஆண்டுகள் கொண்ட படிப்பு.
     </p>
   </div>
 
   <div class="section">
     <h3>🔹 Popular Specializations / Branches</h3>
+  </div>
+
+  <div class="table-wrapper">
     <table>
-      <tr>
-        <th>Branch</th>
-        <th>Description</th>
-        <th>Tamil</th>
-      </tr>
-      <tr>
-        <td>Computer Science (CSE)</td>
-        <td>Software, AI, Data Science</td>
-        <td>மென்பொருள், செயற்கை நுண்ணறிவு</td>
-      </tr>
-      <tr>
-        <td>Electronics & Communication (ECE)</td>
-        <td>Circuits, Communication Systems</td>
-        <td>சர்க்யூட், தொடர்பு அமைப்புகள்</td>
-      </tr>
-      <tr>
-        <td>Electrical & Electronics (EEE)</td>
-        <td>Power Systems, Control</td>
-        <td>மின் சக்தி அமைப்புகள்</td>
-      </tr>
-      <tr>
-        <td>Mechanical</td>
-        <td>Machines, Manufacturing</td>
-        <td>யந்திரங்கள், உற்பத்தி</td>
-      </tr>
-      <tr>
-        <td>Civil</td>
-        <td>Construction, Infrastructure</td>
-        <td>கட்டிட வேலை</td>
-      </tr>
-      <tr>
-        <td>Information Technology</td>
-        <td>Networking, Databases</td>
-        <td>தகவல் தொழில்நுட்பம்</td>
-      </tr>
-      <tr>
-        <td>Chemical</td>
-        <td>Chemical Processes</td>
-        <td>இரசாயன செயல்முறை</td>
-      </tr>
-      <tr>
-        <td>Biomedical</td>
-        <td>Medical Devices</td>
-        <td>மருத்துவ கருவிகள்</td>
-      </tr>
-      <tr>
-        <td>Aeronautical</td>
-        <td>Aircraft Design</td>
-        <td>விமான வடிவமைப்பு</td>
-      </tr>
+      <tr><th>Branch</th><th>Description</th><th>Tamil</th></tr>
+      <tr><td>Computer Science (CSE)</td><td>Software, AI, Data Science</td><td>மென்பொருள், செயற்கை நுண்ணறிவு</td></tr>
+      <tr><td>Electronics & Communication (ECE)</td><td>Circuits, Communication Systems</td><td>சர்க்யூட், தொடர்பு அமைப்புகள்</td></tr>
+      <tr><td>Electrical & Electronics (EEE)</td><td>Power Systems, Control</td><td>மின் சக்தி அமைப்புகள்</td></tr>
+      <tr><td>Mechanical</td><td>Machines, Manufacturing</td><td>யந்திரங்கள், உற்பத்தி</td></tr>
+      <tr><td>Civil</td><td>Construction, Infrastructure</td><td>கட்டிட வேலை</td></tr>
+      <tr><td>Information Technology</td><td>Networking, Databases</td><td>தகவல் தொழில்நுட்பம்</td></tr>
+      <tr><td>Chemical</td><td>Chemical Processes</td><td>இரசாயன செயல்முறை</td></tr>
+      <tr><td>Biomedical</td><td>Medical Devices</td><td>மருத்துவ கருவிகள்</td></tr>
+      <tr><td>Aeronautical</td><td>Aircraft Design</td><td>விமான வடிவமைப்பு</td></tr>
     </table>
-    <p><strong>Tip:</strong> Choose a branch based on your interest and career goals.</p>
   </div>
 
   <div class="section">
     <h3>🔹 Technology Domains & Career Opportunities</h3>
+  </div>
+
+  <div class="table-wrapper">
     <table>
       <tr>
-        <th>Domain</th>
-        <th>Job Role</th>
-        <th>Duration</th>
-        <th>Salary Range</th>
-        <th>Scope</th>
-        <th>தொழில்நுட்பம்</th>
-        <th>வேலை</th>
+        <th>Domain</th><th>Job Role</th><th>Duration</th><th>Salary Range</th><th>Scope</th><th>தொழில்நுட்பம்</th><th>வேலை</th>
       </tr>
-      <tr>
-        <td>Artificial Intelligence</td>
-        <td>AI Engineer, ML Developer</td>
-        <td>4 years</td>
-        <td>₹6–18 LPA</td>
-        <td>India & Abroad (High)</td>
-        <td>செயற்கை நுண்ணறிவு</td>
-        <td>AI இன்ஜினியர்</td>
-      </tr>
-      <tr>
-        <td>Data Science</td>
-        <td>Data Analyst, Data Scientist</td>
-        <td>4 years</td>
-        <td>₹7–20 LPA</td>
-        <td>All sectors (Top Demand)</td>
-        <td>தரவியல் அறிவியல்</td>
-        <td>டேட்டா சயிண்டிஸ்ட்</td>
-      </tr>
-      <tr>
-        <td>Cybersecurity</td>
-        <td>Security Analyst, Ethical Hacker</td>
-        <td>4 years</td>
-        <td>₹5–15 LPA</td>
-        <td>IT, Govt, Banking</td>
-        <td>மின்னணு பாதுகாப்பு</td>
-        <td>எத்தியிக்கல் ஹேக்கர்</td>
-      </tr>
-      <tr>
-        <td>Robotics</td>
-        <td>Automation Engineer</td>
-        <td>4 years</td>
-        <td>₹6–12 LPA</td>
-        <td>Manufacturing, AI</td>
-        <td>ரோபாட்டிக்ஸ்</td>
-        <td>ரோபோ இன்ஜினியர்</td>
-      </tr>
-      <tr>
-        <td>Mechatronics</td>
-        <td>Control System Engineer</td>
-        <td>4 years</td>
-        <td>₹4–10 LPA</td>
-        <td>Industry, Automation</td>
-        <td>மெகாட்ரானிக்ஸ்</td>
-        <td>கன்ட்ரோல் இன்ஜினியர்</td>
-      </tr>
-      <tr>
-        <td>Automobile Engineering</td>
-        <td>Vehicle Design & Testing</td>
-        <td>4 years</td>
-        <td>₹3–10 LPA</td>
-        <td>Auto Companies, R&D</td>
-        <td>வாகன பொறியியல்</td>
-        <td>ஆட்டோமொபைல் டெவலப்பர்</td>
-      </tr>
-      <tr>
-        <td>Marine Engineering</td>
-        <td>Ship Engineer, Marine Officer</td>
-        <td>4 years</td>
-        <td>₹6–12 LPA</td>
-        <td>Indian Navy, Ships</td>
-        <td>மெரின் பொறியியல்</td>
-        <td>கப்பல் இன்ஜினியர்</td>
-      </tr>
-      <tr>
-        <td>Petroleum Engineering</td>
-        <td>Drilling Engineer</td>
-        <td>4 years</td>
-        <td>₹8–22 LPA</td>
-        <td>Gulf, ONGC, Abroad</td>
-        <td>பெட்ரோலியம் பொறியியல்</td>
-        <td>ஓயில் இன்ஜினியர்</td>
-      </tr>
+      <tr><td>Artificial Intelligence</td><td>AI Engineer, ML Developer</td><td>4 years</td><td>₹6–18 LPA</td><td>India & Abroad (High)</td><td>செயற்கை நுண்ணறிவு</td><td>AI இன்ஜினியர்</td></tr>
+      <tr><td>Data Science</td><td>Data Analyst, Data Scientist</td><td>4 years</td><td>₹7–20 LPA</td><td>All sectors (Top Demand)</td><td>தரவியல் அறிவியல்</td><td>டேட்டா சயிண்டிஸ்ட்</td></tr>
+      <tr><td>Cybersecurity</td><td>Security Analyst, Ethical Hacker</td><td>4 years</td><td>₹5–15 LPA</td><td>IT, Govt, Banking</td><td>மின்னணு பாதுகாப்பு</td><td>எத்தியிக்கல் ஹேக்கர்</td></tr>
+      <tr><td>Robotics</td><td>Automation Engineer</td><td>4 years</td><td>₹6–12 LPA</td><td>Manufacturing, AI</td><td>ரோபாட்டிக்ஸ்</td><td>ரோபோ இன்ஜினியர்</td></tr>
+      <tr><td>Mechatronics</td><td>Control System Engineer</td><td>4 years</td><td>₹4–10 LPA</td><td>Industry, Automation</td><td>மெகாட்ரானிக்ஸ்</td><td>கன்ட்ரோல் இன்ஜினியர்</td></tr>
+      <tr><td>Automobile Engineering</td><td>Vehicle Design & Testing</td><td>4 years</td><td>₹3–10 LPA</td><td>Auto Companies, R&D</td><td>வாகன பொறியியல்</td><td>ஆட்டோமொபைல் டெவலப்பர்</td></tr>
+      <tr><td>Marine Engineering</td><td>Ship Engineer, Marine Officer</td><td>4 years</td><td>₹6–12 LPA</td><td>Indian Navy, Ships</td><td>மெரின் பொறியியல்</td><td>கப்பல் இன்ஜினியர்</td></tr>
+      <tr><td>Petroleum Engineering</td><td>Drilling Engineer</td><td>4 years</td><td>₹8–22 LPA</td><td>Gulf, ONGC, Abroad</td><td>பெட்ரோலியம் பொறியியல்</td><td>ஓயில் இன்ஜினியர்</td></tr>
     </table>
   </div>
 
@@ -252,37 +177,8 @@
       <li>Participate in online counselling and select colleges</li>
     </ul>
     <p>
-      தமிழ்நாட்டில் TNEA மூலம் B.E/B.Tech சேர்க்கை நடக்கும். ஆன்லைனில் பதிவு செய்து ஆவணங்களை பதிவேற்ற வேண்டும். பிறகு ரேங்க் பட்டியல் கிடைக்கும். கலந்தாய்வில் பங்கேற்று கல்லூரிகள் தேர்வு செய்யலாம்.
-    </p>
-  </div>
-
-  <div class="section">
-    <h3>🔹 JEE Entrance Process</h3>
-    <p>
-      JEE is a national-level entrance exam for NITs, IITs, and other institutions.
-      <ul>
-        <li><strong>JEE Main:</strong> NITs, IIITs, State Colleges</li>
-        <li><strong>JEE Advanced:</strong> For IIT admissions</li>
-        <li>Apply at <a href="https://jeemain.nta.nic.in" target="_blank">jeemain.nta.nic.in</a></li>
-      </ul>
-    </p>
-    <p>
-      JEE இந்திய அளவில் நடைபெறும் நுழைவு தேர்வு.
-      JEE Main, NIT மற்றும் மாநில கல்லூரிகளுக்கானது. JEE Advanced, IIT க்கானது.
-    </p>
-  </div>
-
-  <div class="section">
-    <h3>🔹 High Scope Branches (2025)</h3>
-    <ul>
-      <li>Computer Science & IT</li>
-      <li>Artificial Intelligence & Data Science</li>
-      <li>Electronics and Communication</li>
-      <li>Mechanical Engineering</li>
-      <li>Civil Engineering (Infrastructure boom)</li>
-    </ul>
-    <p>
-      அதிக வாய்ப்பு உள்ள பிரிவுகள்: கம்ப்யூட்டர் சயின்ஸ், AI, எலக்ட்ரானிக்ஸ், மெக்கானிக்கல்.
+      தமிழ்நாட்டில் TNEA மூலம் B.E/B.Tech சேர்க்கை நடக்கும். ஆன்லைனில் பதிவு செய்து ஆவணங்களை பதிவேற்ற வேண்டும். 
+      பிறகு ரேங்க் பட்டியல் கிடைக்கும். கலந்தாய்வில் பங்கேற்று கல்லூரிகள் தேர்வு செய்யலாம்.
     </p>
   </div>
 

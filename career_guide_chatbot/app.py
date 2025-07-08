@@ -19,6 +19,10 @@ app.secret_key = "replace_this_with_a_long_random_secret_key"
 @app.route("/")
 def home():
     return render_template("index.html")
+@app.route('/')
+def index():
+    return render_template("index.html")
+
 
 @app.route("/faq", methods=["GET", "POST"])
 def faq():

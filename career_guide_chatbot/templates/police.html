@@ -44,12 +44,20 @@
       max-width: 900px;
       margin: 20px auto;
       text-align: left;
+      word-break: break-word;
+      overflow-wrap: break-word;
+    }
+
+    .table-wrapper {
+      overflow-x: auto;
+      margin-top: 15px;
+      border-radius: 10px;
     }
 
     table {
       width: 100%;
+      min-width: 600px;
       border-collapse: collapse;
-      margin-top: 15px;
     }
 
     th, td {
@@ -85,6 +93,22 @@
 
     a {
       color: #004aad;
+      text-decoration: underline;
+    }
+
+    @media screen and (max-width: 768px) {
+      .title-box h1 {
+        font-size: 1.5rem;
+      }
+
+      .content-box {
+        padding: 15px;
+      }
+
+      th, td {
+        font-size: 13px;
+        padding: 8px;
+      }
     }
   </style>
 </head>
@@ -111,32 +135,34 @@
     </ul>
 
     <p><strong>TNUSRB Post Comparison Table:</strong></p>
-    <table>
-      <tr>
-        <th>Post</th>
-        <th>Qualification</th>
-        <th>Age Limit</th>
-        <th>Salary</th>
-      </tr>
-      <tr>
-        <td>Constable</td>
-        <td>10th Pass</td>
-        <td>18–26 years</td>
-        <td>₹18,200 – ₹52,900</td>
-      </tr>
-      <tr>
-        <td>Sub Inspector (SI)</td>
-        <td>Any Degree</td>
-        <td>20–30 years</td>
-        <td>₹36,200 – ₹1,14,800</td>
-      </tr>
-      <tr>
-        <td>Inspector / DSP</td>
-        <td>Degree + Promotions/UPSC</td>
-        <td>–</td>
-        <td>₹56,100 – ₹1,77,500+</td>
-      </tr>
-    </table>
+    <div class="table-wrapper">
+      <table>
+        <tr>
+          <th>Post</th>
+          <th>Qualification</th>
+          <th>Age Limit</th>
+          <th>Salary</th>
+        </tr>
+        <tr>
+          <td>Constable</td>
+          <td>10th Pass</td>
+          <td>18–26 years</td>
+          <td>₹18,200 – ₹52,900</td>
+        </tr>
+        <tr>
+          <td>Sub Inspector (SI)</td>
+          <td>Any Degree</td>
+          <td>20–30 years</td>
+          <td>₹36,200 – ₹1,14,800</td>
+        </tr>
+        <tr>
+          <td>Inspector / DSP</td>
+          <td>Degree + Promotions/UPSC</td>
+          <td>–</td>
+          <td>₹56,100 – ₹1,77,500+</td>
+        </tr>
+      </table>
+    </div>
 
     <p><strong>Preparation Tips:</strong></p>
     <ul>
@@ -146,12 +172,7 @@
       <li>📝 Take mock tests and practice old question papers</li>
     </ul>
 
-    <p><strong>Downloadable Resources:</strong></p>
-    <ul>
-      <li><a href="#">📄 TNUSRB Constable Syllabus PDF</a></li>
-      <li><a href="#">📄 Previous Year Question Papers</a></li>
-      <li><a href="#">📄 Physical Test Requirements (Chart)</a></li>
-    </ul>
+    
   </div>
 
   <!-- Tamil Section -->
@@ -171,32 +192,34 @@
     </ul>
 
     <p><strong>TNUSRB பதவிகள் ஒப்பீட்டு அட்டவணை:</strong></p>
-    <table>
-      <tr>
-        <th>பதவி</th>
-        <th>தகுதி</th>
-        <th>வயது வரம்பு</th>
-        <th>சம்பளம்</th>
-      </tr>
-      <tr>
-        <td>கான்ஸ்டபிள்</td>
-        <td>10ம் வகுப்பு</td>
-        <td>18–26 வயது</td>
-        <td>₹18,200 – ₹52,900</td>
-      </tr>
-      <tr>
-        <td>சப் இன்ஸ்பெக்டர் (SI)</td>
-        <td>பட்டதாரி</td>
-        <td>20–30 வயது</td>
-        <td>₹36,200 – ₹1,14,800</td>
-      </tr>
-      <tr>
-        <td>இன்ஸ்பெக்டர் / DSP</td>
-        <td>பட்டம் + பதவி உயர்வு/UPSC</td>
-        <td>–</td>
-        <td>₹56,100 – ₹1,77,500+</td>
-      </tr>
-    </table>
+    <div class="table-wrapper">
+      <table>
+        <tr>
+          <th>பதவி</th>
+          <th>தகுதி</th>
+          <th>வயது வரம்பு</th>
+          <th>சம்பளம்</th>
+        </tr>
+        <tr>
+          <td>கான்ஸ்டபிள்</td>
+          <td>10ம் வகுப்பு</td>
+          <td>18–26 வயது</td>
+          <td>₹18,200 – ₹52,900</td>
+        </tr>
+        <tr>
+          <td>சப் இன்ஸ்பெக்டர் (SI)</td>
+          <td>பட்டதாரி</td>
+          <td>20–30 வயது</td>
+          <td>₹36,200 – ₹1,14,800</td>
+        </tr>
+        <tr>
+          <td>இன்ஸ்பெக்டர் / DSP</td>
+          <td>பட்டம் + பதவி உயர்வு/UPSC</td>
+          <td>–</td>
+          <td>₹56,100 – ₹1,77,500+</td>
+        </tr>
+      </table>
+    </div>
 
     <p><strong>தேர்விற்கான தயாரிப்பு குறிப்புகள்:</strong></p>
     <ul>
@@ -206,15 +229,11 @@
       <li>📝 மாக் தேர்வுகள் மற்றும் பழைய கேள்விப் பேப்பர்கள் பயிற்சி செய்யவும்</li>
     </ul>
 
-    <p><strong>பயிற்சி மற்றும் பதிவிறக்கம் செய்யக்கூடிய ஆதாரங்கள்:</strong></p>
-    <ul>
-      <li><a href="#">📄 TNUSRB பாடத்திட்டம் PDF</a></li>
-      <li><a href="#">📄 முந்தைய ஆண்டு கேள்விப் பேப்பர்கள்</a></li>
-      <li><a href="#">📄 உடற்தகுதி அளவுகள் (பட்டியல்)</a></li>
-    </ul>
+    
   </div>
 
-  <a href="/" class="back-home">🏠 Back to Home</a>
+  <a href="/#profession" class="back-home">🏠 Back to Home</a>
+
 
 </body>
 </html>

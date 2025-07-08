@@ -44,10 +44,22 @@
       box-shadow: 0 0 25px #0056b3;
       border: 3px solid #004aad;
       text-align: left;
+      word-wrap: break-word;
+      overflow-wrap: break-word;
     }
 
     ul {
       padding-left: 20px;
+    }
+
+    ul li {
+      margin-bottom: 12px;
+      line-height: 1.6;
+    }
+
+    a {
+      color: #0056b3;
+      word-break: break-word;
     }
 
     a.back-home {
@@ -66,8 +78,18 @@
       background-color: #003b8b;
     }
 
-    a {
-      color: #0056b3;
+    @media screen and (max-width: 768px) {
+      .title-box h1 {
+        font-size: 1.6rem;
+      }
+
+      .content-box {
+        padding: 15px;
+      }
+
+      ul li {
+        font-size: 15px;
+      }
     }
   </style>
 </head>
@@ -86,7 +108,9 @@
       <li>🎓 SC/ST Scholarship – for students from SC/ST categories with income below the limit.</li>
       <li>🎓 BC/MBC/DNC Scholarship – available for Backward Class students.</li>
       <li>🎓 Private Scholarships – like Reliance Foundation, Sitaram Jindal, Tata Trusts, etc.</li>
-      <li>🎓 National Scholarship Portal (NSP) – One place for all central + state scholarships (<a href="https://scholarships.gov.in" target="_blank">scholarships.gov.in</a>)</li>
+      <li>🎓 National Scholarship Portal (NSP) – One place for all central + state scholarships:
+        <br><a href="https://scholarships.gov.in" target="_blank">https://scholarships.gov.in</a>
+      </li>
     </ul>
   </div>
 
@@ -97,7 +121,9 @@
       <li>🎓 மெரிட் உதவித்தொகை – 10 அல்லது 12ஆம் வகுப்பில் அதிக மதிப்பெண்கள் பெற்ற மாணவர்களுக்கு.</li>
       <li>🎓 பட்டியல் சாதி / பிற்படுத்தப்பட்ட பிரிவுக்கான உதவித்தொகை – SC/ST, BC/MBC மாணவர்களுக்கு.</li>
       <li>🎓 தனியார் உதவித்தொகைகள் – ரிலையன்ஸ் ஃபவுண்டேஷன், சிதாராம் ஜிந்தால், டாடா டிரஸ்ட் போன்றவை.</li>
-      <li>🎓 தேசிய உதவித்தொகை இணையதளம் – அனைத்துப் புள்ளிகள் உள்ள ஒரே இடம்: <a href="https://scholarships.gov.in" target="_blank">scholarships.gov.in</a></li>
+      <li>🎓 தேசிய உதவித்தொகை இணையதளம் – அனைத்துப் புள்ளிகள் உள்ள ஒரே இடம்:
+        <br><a href="https://scholarships.gov.in" target="_blank">https://scholarships.gov.in</a>
+      </li>
     </ul>
   </div>
 
