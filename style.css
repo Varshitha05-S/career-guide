@@ -20,24 +20,52 @@ h1 {
     border-radius: 8px;
     font-size: 18px;
 }
-.back-home {
-  display: inline-block;
-  margin: 30px auto;
-  padding: 10px 20px;
-  text-decoration: none;
-  font-size: 16px;
-  color: white;
-  background-color: #004aad;
-  border-radius: 6px;
-}
-
-.back-home:hover {
-  background-color: #002f6c;
-}
 
 
 .menu a:hover {
     background-color: #005bb5;
 }
+/* Make body content responsive */
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* Responsive tables */
+table {
+  width: 100%;
+  overflow-x: auto;
+  display: block;
+  border-collapse: collapse;
+}
+
+/* Ensure text and boxes don't overflow on mobile */
+.container, .box, .content {
+  max-width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+/* Optional: Make large text resize better */
+h1, h2, h3, p {
+  word-wrap: break-word;
+}
+
+/* Responsive media queries */
+@media (max-width: 768px) {
+  table {
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  .glow-box {
+    padding: 10px;
+    font-size: 18px;
+  }
+}
+
 
 
