@@ -1,3 +1,60 @@
+/* Main Page Styles */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f4f4f4;
+  padding: 20px;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+h1 {
+  color: #004aad;
+  font-size: 26px;
+}
+
+/* Menu Links */
+.menu a {
+  display: block;
+  margin: 15px;
+  padding: 10px;
+  background-color: #0073e6;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 18px;
+}
+
+.menu a:hover {
+  background-color: #005bb5;
+}
+
+/* Tables */
+table {
+  width: 100%;
+  overflow-x: auto;
+  display: block;
+  border-collapse: collapse;
+}
+
+/* Content Layout */
+.container,
+.box,
+.content {
+  max-width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+/* Text Wrapping */
+h1,
+h2,
+h3,
+p {
+  word-wrap: break-word;
+}
+
+/* Back to Home Button */
 .back-home {
   display: inline-block;
   margin-top: 30px;
@@ -8,6 +65,23 @@
   border-radius: 8px;
   transition: background-color 0.3s;
 }
+
 .back-home:hover {
   background-color: #001f4d;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  table {
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  .glow-box {
+    padding: 10px;
+    font-size: 18px;
+  }
 }
