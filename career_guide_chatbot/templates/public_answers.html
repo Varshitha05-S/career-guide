@@ -42,7 +42,6 @@
       box-sizing: border-box;
     }
 
-    /* Color classes that will rotate */
     .color-blue    { border-color: #004aad; box-shadow: 0 0 20px #0056b3; }
     .color-green   { border-color: #2e8b57; box-shadow: 0 0 20px #3cb371; }
     .color-purple  { border-color: #800080; box-shadow: 0 0 20px #9932cc; }
@@ -76,11 +75,13 @@
 
   {% if messages %}
     {% for m in messages %}
+      {% if m.status == 'answered' %}
       <div class="answer-box {{ color_classes[loop.index0 % color_classes|length] }}">
         <p><strong>Name:</strong> {{ m.name if m.name else "Anonymous" }}</p>
         <p><strong>Question:</strong> {{ m.question }}</p>
         <p><strong>Reply:</strong> {{ m.reply }}</p>
       </div>
+      {% endif %}
     {% endfor %}
   {% else %}
     <p>No questions have been answered yet.</p>

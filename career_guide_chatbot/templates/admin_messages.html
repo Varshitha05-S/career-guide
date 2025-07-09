@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Admin Messages</title>
   <style>
     body {
@@ -116,49 +115,49 @@
   {% endif %}
 
   {% for m in messages %}
-  <div id="message-{{ loop.index0 }}" class="message-box {% if m.status == 'new' %}unanswered{% endif %}">
+  <div id="message-{{ m.id }}" class="message-box {% if m.status == 'new' %}unanswered{% endif %}">
     <p><strong>Name:</strong> {{ m.name }}</p>
     <p><strong>Question:</strong> {{ m.question }}</p>
     <p><strong>Status:</strong> {{ m.status }}</p>
 
     {% if m.reply %}
       <p><strong>Reply:</strong> {{ m.reply }}</p>
-      <form method="POST" action="/admin/edit/{{ loop.index0 }}" class="reply-box">
+      <form method="POST" action="/admin/edit/{{ m.id }}" class="reply-box">
         <textarea name="reply" required>{{ m.reply }}</textarea>
         <br>
         <button type="submit" class="edit-button">✏️ Edit Reply</button>
       </form>
-      {% if replied_index == loop.index0 %}
-      <div class="success-message">✅ Reply updated successfully!</div>
+      {% if replied_index == m.id %}
+        <div class="success-message">✅ Reply updated successfully!</div>
       {% endif %}
     {% else %}
       <form method="POST" class="reply-box">
-        <input type="hidden" name="index" value="{{ loop.index0 }}">
+        <input type="hidden" name="index" value="{{ m.id }}">
         <textarea name="reply" placeholder="Write your reply..." required></textarea>
         <br>
         <button type="submit">Send Reply</button>
       </form>
-      {% if replied_index == loop.index0 %}
-      <div class="success-message">✅ Reply sent successfully!</div>
+      {% if replied_index == m.id %}
+        <div class="success-message">✅ Reply sent successfully!</div>
       {% endif %}
     {% endif %}
 
-    <form method="POST" action="/admin/delete/{{ loop.index0 }}">
+    <form method="POST" action="/admin/delete/{{ m.id }}">
       <button type="submit" class="delete-button" onclick="return confirm('Are you sure you want to delete this message?')">Delete</button>
     </form>
   </div>
   {% endfor %}
 
   {% if replied_index is not none %}
-<script>
-  window.onload = function() {
-    const repliedDiv = document.getElementById("message-{{ replied_index }}");
-    if (repliedDiv) {
-      repliedDiv.scrollIntoView({ behavior: "instant", block: "center" });
-    }
-  };
-</script>
-{% endif %}
+  <script>
+    window.onload = function () {
+      const repliedDiv = document.getElementById("message-{{ replied_index }}");
+      if (repliedDiv) {
+        repliedDiv.scrollIntoView({ behavior: "instant", block: "center" });
+      }
+    };
+  </script>
+  {% endif %}
 
   <div class="footer">
     <a href="/" class="home-btn">🏠 Back to Home</a>
